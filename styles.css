@@ -190,3 +190,10 @@ details p, details ul { margin: 10px 0 0; color: var(--ink-soft); }
 @media (min-width: 980px) {
   .grid.three { grid-template-columns: repeat(3, 1fr); }
 }
+
+/* Platform list in the "Coming soon" box: one line when it fits, two clean lines on phones. */
+.coming-soon .nw { white-space: nowrap; }
+@media (max-width: 479px) {
+  .coming-soon .sep { display: none; }
+  .coming-soon .nw { display: block; }
+}
